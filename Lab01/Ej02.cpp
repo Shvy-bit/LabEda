@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-
+using namespace std;
 class Vehiculo {
     public:
         virtual ~Vehiculo() {}
@@ -10,14 +10,14 @@ class Vehiculo {
 
 class Auto : public Vehiculo {
     private:
-        std::string marca;
+        string marca;
     public:
-        Auto(std::string _marca) : marca(_marca) {}
+        Auto(string _marca) : marca(_marca) {}
             void iniciar() override {
-            std::cout << "El auto " << marca << " ha encendido el motor." << std::endl;
+            cout << "El auto " << marca << " ha encendido el motor." << endl;
         }
         void detener() override {
-            std::cout << "El auto " << marca << " ha frenado y se ha detenido." << std::endl;
+            cout << "El auto " << marca << " ha frenado y se ha detenido." << endl;
         }
 }; //Clase auto que usa Vehiculo como base para crearse
 int main() {
