@@ -23,7 +23,7 @@ int main() {
     ArregloNumerico<double> precios;
     precios.modificar(0, 19.99);
 
-    ArregloNumerico<string> listaNombres;
+    //ArregloNumerico<string> listaNombres;
     
     cout << "Nota guardada: " << notas.obtener(0) << endl;
     return 0;
